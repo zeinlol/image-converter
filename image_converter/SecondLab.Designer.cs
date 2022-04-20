@@ -258,7 +258,7 @@ namespace image_converter
             this.Controls.Add(this.backButton);
             this.MaximumSize = new System.Drawing.Size(863, 439);
             this.Name = "SecondLab";
-            this.Text = "SecondLab";
+            this.Text = "Second Lab";
             ((System.ComponentModel.ISupportInitialize)(this.originalPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.generatedPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.redTrackBar)).EndInit();

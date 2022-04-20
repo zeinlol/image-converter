@@ -11,7 +11,6 @@ namespace image_converter
         private readonly int _greenChanelArgDefault = 150;
         private readonly int _redChanelDefault = 77;
         private Bitmap _originalImage, _generatedImage;
-        private int _redChanelArg = 77, _greenChanelArg = 150, _blueChanelArg = 29;
 
         public SecondLab()
         {
@@ -58,19 +57,16 @@ namespace image_converter
 
         private void redTrackBar_Scroll(object sender, EventArgs e)
         {
-            _redChanelArg = redTrackBar.Value;
             redTrackBarValue.Text = redTrackBar.Value.ToString();
         }
 
         private void greenTrackBar_Scroll(object sender, EventArgs e)
         {
-            _greenChanelArg = greenTrackBar.Value;
             greenTrackBarValue.Text = greenTrackBar.Value.ToString();
         }
 
         private void blueTrackBar_Scroll(object sender, EventArgs e)
         {
-            _blueChanelArg = blueTrackBar.Value;
             blueTrackBarValue.Text = blueTrackBar.Value.ToString();
         }
 
@@ -84,9 +80,9 @@ namespace image_converter
             for (var j = 0; j < _originalImage.Height; j++)
             {
                 var col1 = _originalImage.GetPixel(i, j);
-                var grayColor = (_redChanelArg * col1.R + 
-                                 _greenChanelArg * col1.G + 
-                                 _blueChanelArg * col1.B) / 256;
+                var grayColor = (redTrackBar.Value * col1.R +
+                                 greenTrackBar.Value * col1.G +
+                                 blueTrackBar.Value * col1.B) / 256;
                 if (grayColor > 255) grayColor = 255;
                 _generatedImage.SetPixel(i, j,
                     Color.FromArgb(255, grayColor, grayColor, grayColor));
@@ -97,11 +93,6 @@ namespace image_converter
 
         private void resetWeightsButton_Click(object sender, EventArgs e)
         {
-            // reset values used in functions
-            _redChanelArg = _redChanelDefault;
-            _greenChanelArg = _greenChanelArgDefault;
-            _blueChanelArg = _blueChanelArgDefault;
-
             // reset values in trackBars
             redTrackBar.Value = _redChanelDefault;
             greenTrackBar.Value = _greenChanelArgDefault;
