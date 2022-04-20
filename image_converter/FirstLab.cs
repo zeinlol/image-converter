@@ -30,7 +30,7 @@ namespace image_converter
         private void disperseButton_Click(object sender, EventArgs e)
         {
             if (_originalImage == null) return;
-            
+
             _redImageChanel = new Bitmap(_originalImage);
             _greenImageChanel = new Bitmap(_originalImage);
             _blueImageChanel = new Bitmap(_originalImage);
@@ -55,7 +55,7 @@ namespace image_converter
 
         private void originalPictureBox_MouseClick(object sender, MouseEventArgs e)
         {
-            if (_originalImage == null) return;  //Handle if no image
+            if (_originalImage == null) return; //Handle if no image
 
             RGBTextBox.Text = _originalImage.GetPixel(e.X, e.Y).ToString();
             HexTextBox.Text = _originalImage.GetPixel(e.X, e.Y).ToArgb().ToString("X");

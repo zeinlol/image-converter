@@ -233,7 +233,8 @@ namespace image_converter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 487);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(800, 486);
             this.Controls.Add(this.disperseButton);
             this.Controls.Add(this.NumberTextBox);
             this.Controls.Add(this.label7);
@@ -251,7 +252,9 @@ namespace image_converter
             this.Controls.Add(this.originalPictureBox);
             this.Controls.Add(this.openFileButton);
             this.Controls.Add(this.backButton);
+            this.MaximumSize = new System.Drawing.Size(818, 533);
             this.Name = "FirstLab";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FirstLab";
             ((System.ComponentModel.ISupportInitialize)(this.originalPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.redPictureBox)).EndInit();
