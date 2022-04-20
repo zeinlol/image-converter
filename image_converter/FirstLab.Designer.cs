@@ -255,7 +255,7 @@ namespace image_converter
             this.MaximumSize = new System.Drawing.Size(818, 533);
             this.Name = "FirstLab";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FirstLab";
+            this.Text = "First Lab";
             ((System.ComponentModel.ISupportInitialize)(this.originalPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.redPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenPictureBox)).EndInit();
