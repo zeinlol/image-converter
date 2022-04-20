@@ -10,7 +10,7 @@ namespace image_converter
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void lab1Button_Click(object sender, EventArgs e)
         {
             var firstLabForm = new FirstLab();
             Hide();
@@ -22,6 +22,13 @@ namespace image_converter
             var secondLabForm = new SecondLab();
             Hide();
             secondLabForm.ShowDialog();
+        }
+
+        private void lab3Button_Click(object sender, EventArgs e)
+        {
+            var thirdLabForm = new ThirdLab();
+            Hide();
+            thirdLabForm.ShowDialog();
         }
     }
 }

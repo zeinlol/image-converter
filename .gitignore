@@ -1,6 +1,7 @@
 # Common IntelliJ Platform excludes
 
 .idea/**.*
+.idea
 
 *.suo
 *.user
