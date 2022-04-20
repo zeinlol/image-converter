@@ -13,8 +13,8 @@ namespace image_converter
         private void button1_Click(object sender, EventArgs e)
         {
             var firstLabForm = new FirstLab();
-            this.Hide();
-            firstLabForm.Show();
+            Hide();
+            firstLabForm.ShowDialog();
         }
     }
 }
