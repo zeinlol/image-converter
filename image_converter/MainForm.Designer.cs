@@ -34,12 +34,13 @@ namespace image_converter
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lab2Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(79, 118);
+            this.button1.Location = new System.Drawing.Point(57, 118);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(190, 42);
             this.button1.TabIndex = 0;
@@ -50,7 +51,7 @@ namespace image_converter
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(79, 20);
+            this.label1.Location = new System.Drawing.Point(57, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(190, 51);
             this.label1.TabIndex = 1;
@@ -60,25 +61,40 @@ namespace image_converter
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(79, 71);
+            this.label2.Location = new System.Drawing.Point(57, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(190, 44);
             this.label2.TabIndex = 2;
             this.label2.Text = "Choose task";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lab2Button
+            // 
+            this.lab2Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab2Button.Location = new System.Drawing.Point(57, 166);
+            this.lab2Button.Name = "lab2Button";
+            this.lab2Button.Size = new System.Drawing.Size(190, 42);
+            this.lab2Button.TabIndex = 3;
+            this.lab2Button.Text = "Second lab";
+            this.lab2Button.UseVisualStyleBackColor = true;
+            this.lab2Button.Click += new System.EventHandler(this.lab2Button_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 302);
+            this.ClientSize = new System.Drawing.Size(312, 395);
+            this.Controls.Add(this.lab2Button);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.MaximumSize = new System.Drawing.Size(330, 442);
             this.Name = "MainForm";
             this.Text = "Image Converter";
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button lab2Button;
 
         private System.Windows.Forms.Label label2;
 

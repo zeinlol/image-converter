@@ -16,5 +16,12 @@ namespace image_converter
             Hide();
             firstLabForm.ShowDialog();
         }
+
+        private void lab2Button_Click(object sender, EventArgs e)
+        {
+            var secondLabForm = new SecondLab();
+            Hide();
+            secondLabForm.ShowDialog();
+        }
     }
 }

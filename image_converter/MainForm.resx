@@ -122,7 +122,4 @@
             PublicKeyToken=b77a5c561934e089
         </value>
     </resheader>
-    <data name="RGBTextBoxDefaultText" xml:space="preserve">
-    <value>Color [A=0, R=0, G=0, B=0]</value>
-  </data>
 </root>
