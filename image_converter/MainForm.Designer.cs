@@ -37,6 +37,8 @@ namespace image_converter
             this.lab2Button = new System.Windows.Forms.Button();
             this.Lab3Button = new System.Windows.Forms.Button();
             this.Lab4Button = new System.Windows.Forms.Button();
+            this.lab5Button = new System.Windows.Forms.Button();
+            this.lab6Sixth = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lab1Button
@@ -103,22 +105,47 @@ namespace image_converter
             this.Lab4Button.UseVisualStyleBackColor = true;
             this.Lab4Button.Click += new System.EventHandler(this.Lab4Button_Click);
             // 
+            // lab5Button
+            // 
+            this.lab5Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab5Button.Location = new System.Drawing.Point(57, 310);
+            this.lab5Button.Name = "lab5Button";
+            this.lab5Button.Size = new System.Drawing.Size(190, 42);
+            this.lab5Button.TabIndex = 6;
+            this.lab5Button.Text = "Fifth Lab";
+            this.lab5Button.UseVisualStyleBackColor = true;
+            // 
+            // lab6Sixth
+            // 
+            this.lab6Sixth.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab6Sixth.Location = new System.Drawing.Point(57, 358);
+            this.lab6Sixth.Name = "lab6Sixth";
+            this.lab6Sixth.Size = new System.Drawing.Size(190, 42);
+            this.lab6Sixth.TabIndex = 7;
+            this.lab6Sixth.Text = "Sixth Lab";
+            this.lab6Sixth.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 395);
+            this.ClientSize = new System.Drawing.Size(312, 413);
+            this.Controls.Add(this.lab6Sixth);
+            this.Controls.Add(this.lab5Button);
             this.Controls.Add(this.Lab4Button);
             this.Controls.Add(this.Lab3Button);
             this.Controls.Add(this.lab2Button);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lab1Button);
-            this.MaximumSize = new System.Drawing.Size(330, 442);
+            this.MaximumSize = new System.Drawing.Size(330, 460);
             this.Name = "MainForm";
             this.Text = "Image Converter";
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button lab5Button;
+        private System.Windows.Forms.Button lab6Sixth;
 
         private System.Windows.Forms.Button Lab4Button;
 
