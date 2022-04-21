@@ -30,5 +30,12 @@ namespace image_converter
             Hide();
             thirdLabForm.ShowDialog();
         }
+
+        private void Lab4Button_Click(object sender, EventArgs e)
+        {
+            var fourthLabForm = new FourthLab();
+            Hide();
+            fourthLabForm.ShowDialog();
+        }
     }
 }

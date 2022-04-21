@@ -36,6 +36,7 @@ namespace image_converter
             this.label2 = new System.Windows.Forms.Label();
             this.lab2Button = new System.Windows.Forms.Button();
             this.Lab3Button = new System.Windows.Forms.Button();
+            this.Lab4Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lab1Button
@@ -91,11 +92,23 @@ namespace image_converter
             this.Lab3Button.UseVisualStyleBackColor = true;
             this.Lab3Button.Click += new System.EventHandler(this.lab3Button_Click);
             // 
+            // Lab4Button
+            // 
+            this.Lab4Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lab4Button.Location = new System.Drawing.Point(57, 262);
+            this.Lab4Button.Name = "Lab4Button";
+            this.Lab4Button.Size = new System.Drawing.Size(190, 42);
+            this.Lab4Button.TabIndex = 5;
+            this.Lab4Button.Text = "Fourth Lab";
+            this.Lab4Button.UseVisualStyleBackColor = true;
+            this.Lab4Button.Click += new System.EventHandler(this.Lab4Button_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(312, 395);
+            this.Controls.Add(this.Lab4Button);
             this.Controls.Add(this.Lab3Button);
             this.Controls.Add(this.lab2Button);
             this.Controls.Add(this.label2);
@@ -106,6 +119,8 @@ namespace image_converter
             this.Text = "Image Converter";
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button Lab4Button;
 
         private System.Windows.Forms.Button Lab3Button;
 
