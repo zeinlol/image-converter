@@ -85,6 +85,7 @@ namespace image_converter
             this.generateWavesEffect = new System.Windows.Forms.Button();
             this.yCoordinateV3TrackBar = new System.Windows.Forms.TrackBar();
             this.label5 = new System.Windows.Forms.Label();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.originalPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.generatedPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.redTrackBar)).BeginInit();
@@ -693,12 +694,20 @@ namespace image_converter
             this.label5.Text = "V3";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(0, 0);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(100, 23);
+            this.progressBar.TabIndex = 0;
+            // 
             // ThirdLab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(845, 722);
+            this.ClientSize = new System.Drawing.Size(845, 708);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.wavesGroupBox);
             this.Controls.Add(this.gassEffectGroup);
             this.Controls.Add(this.linesGroup);
@@ -734,6 +743,8 @@ namespace image_converter
             ((System.ComponentModel.ISupportInitialize)(this.yCoordinateV3TrackBar)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.ProgressBar progressBar;
 
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;

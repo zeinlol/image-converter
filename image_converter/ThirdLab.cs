@@ -138,11 +138,9 @@ namespace image_converter
 
             for (var i = 0; i < _originalImage.Width; i++)
             for (var j = 0; j < _originalImage.Height; j++)
-            {
                 if ((horizontalRadioButton.Checked ? j : i) %
                     (linesNumberTrackBar.Value + 1) == 0)
                     _generatedImage.SetPixel(i, j, linesColor);
-            }
 
             generatedPicture.Image = _generatedImage;
         }
@@ -156,7 +154,6 @@ namespace image_converter
         {
             glassStrengthText.Text = GlassStrengthDefault.ToString();
             glassStrengthTrackBar.Value = GlassStrengthDefault;
-
         }
 
         private void glassStrengthTrackBar_Scroll(object sender, EventArgs e)
@@ -167,18 +164,17 @@ namespace image_converter
 
         private void generateGlassEffect_Click(object sender, EventArgs e)
         {
-            
             if (_originalImage == null) return;
             var randomNumber = new Random();
             _generatedImage = new Bitmap(_originalImage);
-            
+
             for (var i = 0; i < _originalImage.Width; i++)
             for (var j = 0; j < _originalImage.Height; j++)
             {
                 var x = i + (int)((randomNumber.NextDouble() - 0.5) * glassStrengthTrackBar.Value);
                 var y = j + (int)((randomNumber.NextDouble() - 0.5) * glassStrengthTrackBar.Value);
-                    
-                if(x < _originalImage.Width && x >= 0 && y < _originalImage.Height && y >= 0)
+
+                if (x < _originalImage.Width && x >= 0 && y < _originalImage.Height && y >= 0)
                 {
                     if (secondGlassEffectRadioButton.Checked)
                         _generatedImage.SetPixel(x, y, _originalImage.GetPixel(i, j));
@@ -186,26 +182,26 @@ namespace image_converter
                         _generatedImage.SetPixel(i, j, _originalImage.GetPixel(x, y));
                 }
             }
-            
+
             generatedPicture.Image = _generatedImage;
         }
 
         private void generateWavesEffect_Click(object sender, EventArgs e)
         {
             if (_originalImage == null) return;
-            
+
             _generatedImage = new Bitmap(_originalImage);
-            
+
             for (var i = 0; i < _originalImage.Width; i++)
             for (var j = 0; j < _originalImage.Height; j++)
             {
-                var x = (int)(i + xCoordinateV1TrackBar.Value*
+                var x = (int)(i + xCoordinateV1TrackBar.Value *
                     Math.Sin(2 * Math.PI * j / xCoordinateV2TrackBar.Value));
                 var y = (int)(j + yCoordinateV3TrackBar.Value *
                     Math.Sin(2 * Math.PI * i / yCoordinateV4TrackBar.Value));
 
-                    
-                if(x < _originalImage.Width && x >= 0 && y < _originalImage.Height && y >= 0)
+
+                if (x < _originalImage.Width && x >= 0 && y < _originalImage.Height && y >= 0)
                 {
                     if (secondWavesEffectRadioButton.Checked)
                         _generatedImage.SetPixel(x, y, _originalImage.GetPixel(i, j));
@@ -213,7 +209,7 @@ namespace image_converter
                         _generatedImage.SetPixel(i, j, _originalImage.GetPixel(x, y));
                 }
             }
-            
+
             generatedPicture.Image = _generatedImage;
         }
 
