@@ -35,6 +35,7 @@
     <ItemGroup>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
+        <Reference Include="System.Windows.Forms.DataVisualization"/>
         <Reference Include="System.Xml.Linq"/>
         <Reference Include="System.Data.DataSetExtensions"/>
         <Reference Include="Microsoft.CSharp"/>
@@ -46,6 +47,8 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="FifthLab.cs"/>
+        <Compile Include="FifthLab.Designer.cs"/>
         <Compile Include="MainForm.cs">
             <SubType>Form</SubType>
         </Compile>
@@ -90,6 +93,9 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+        <EmbeddedResource Include="FifthLab.resx">
+            <DependentUpon>FifthLab.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="FourthLab.resx">
             <DependentUpon>FourthLab.cs</DependentUpon>
         </EmbeddedResource>

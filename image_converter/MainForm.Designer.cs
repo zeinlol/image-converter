@@ -114,6 +114,7 @@ namespace image_converter
             this.lab5Button.TabIndex = 6;
             this.lab5Button.Text = "Fifth Lab";
             this.lab5Button.UseVisualStyleBackColor = true;
+            this.lab5Button.Click += new System.EventHandler(this.lab5Button_Click);
             // 
             // lab6Sixth
             // 
