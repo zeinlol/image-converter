@@ -12,37 +12,38 @@ namespace image_converter
 
         private void lab1Button_Click(object sender, EventArgs e)
         {
-            var firstLabForm = new FirstLab();
-            Hide();
-            firstLabForm.ShowDialog();
+            OpenLab(new FirstLab());
         }
 
         private void lab2Button_Click(object sender, EventArgs e)
         {
-            var secondLabForm = new SecondLab();
-            Hide();
-            secondLabForm.ShowDialog();
+            OpenLab(new SecondLab());
         }
 
         private void lab3Button_Click(object sender, EventArgs e)
         {
-            var thirdLabForm = new ThirdLab();
-            Hide();
-            thirdLabForm.ShowDialog();
+            OpenLab(new ThirdLab());
         }
 
         private void Lab4Button_Click(object sender, EventArgs e)
         {
-            var fourthLabForm = new FourthLab();
-            Hide();
-            fourthLabForm.ShowDialog();
+            OpenLab(new FourthLab());
         }
 
         private void lab5Button_Click(object sender, EventArgs e)
         {
-            var fifthLabForm = new FifthLab();
+            OpenLab(new FifthLab());
+        }
+
+        private void lab6Sixth_Click(object sender, EventArgs e)
+        {
+            OpenLab(new SixthLab());
+        }
+
+        private void OpenLab(Form labForm)
+        {
             Hide();
-            fifthLabForm.ShowDialog();
+            labForm.ShowDialog();
         }
     }
 }

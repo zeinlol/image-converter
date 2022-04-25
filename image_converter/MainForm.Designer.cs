@@ -125,6 +125,7 @@ namespace image_converter
             this.lab6Sixth.TabIndex = 7;
             this.lab6Sixth.Text = "Sixth Lab";
             this.lab6Sixth.UseVisualStyleBackColor = true;
+            this.lab6Sixth.Click += new System.EventHandler(this.lab6Sixth_Click);
             // 
             // MainForm
             // 
