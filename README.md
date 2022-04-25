@@ -1,7 +1,7 @@
 # image-converter
 .net tool for work with images that I made for one of my Uni subject
 
-This program contains 6 tasks for processing jpg/jpeg/bmp image.
+This program contains 6 tasks for processing `jpg/jpeg/bmp` images.
 
 ## First task
 First parce image to color chanels and see pixel color info in RGB, hex, int formats  
@@ -25,10 +25,11 @@ Allows to rotate, mirror and incline image
 Allows to see image histogram, change image brightness and use line histogram filtration or mediane grey filtration.  
 <img src="https://github.com/zeinlol/image-converter/blob/master/example_picrutes/bad_histogram.jpg?raw=true" width="300"/>
 <img src="https://github.com/zeinlol/image-converter/blob/master/example_picrutes/fixed_histogram.jpg?raw=true" width="300"/>
+<img src="https://github.com/zeinlol/image-converter/blob/master/example_picrutes/blue_circle.jpg?raw=true" width="300"/>
 <img src="https://github.com/zeinlol/image-converter/blob/master/example_picrutes/grey_median_correction.jpg?raw=true" width="300"/>
 
 ## Sixth task
-Allows to filter image from nose with median filtration. Ypu can select range: `3*3, 5*5, 7*7`  
+Allows to filter image from noise with median filtration. You can select range: `3*3, 5*5, 7*7`  
 <img src="https://github.com/zeinlol/image-converter/blob/master/example_picrutes/filter_test_image.jpg?raw=true" width="300"/>
 <img src="https://github.com/zeinlol/image-converter/blob/master/example_picrutes/filter_3x3_range_result.jpg?raw=true" width="300"/>
 <img src="https://github.com/zeinlol/image-converter/blob/master/example_picrutes/filter_5x5_range_result.jpg?raw=true" width="300"/>
